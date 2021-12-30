@@ -7,7 +7,8 @@ function App() {
   const [text, setText] = useState([]);
 
   const handleSubmit = (e) => {
-    e.addEventListener();
+    e.preventDefault();
+    console.log('hello world')
   }
   
   return (
@@ -17,8 +18,13 @@ function App() {
     <label htmlFor='amount'>
       Paragraph:
     </label>
-    <input type='number' name='amount' id='amount'></input>
+    <input type='number' name='amount' id='amount' value={count} onChange={(e) => setCount(e.target.value)}></input>
+    
+    <button type='submit' className='btn'>Generate</button>
     </form>
+    <article className='lorem-text'>
+      {text}
+    </article>
   </section>
     )
 }
