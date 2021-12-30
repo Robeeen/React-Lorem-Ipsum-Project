@@ -8,7 +8,8 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('hello world')
+    console.log('hello world');
+    setText(data)
   }
   
   return (
