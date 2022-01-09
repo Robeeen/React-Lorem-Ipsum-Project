@@ -14,7 +14,7 @@ function App() {
       amount = 1
     }
     if(count > 8){
-      amount = 1
+      amount = 8
     }
 
     setText(data.slice(0, amount));
